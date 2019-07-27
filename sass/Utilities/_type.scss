@@ -1,0 +1,102 @@
+// =================================
+//	Type
+// =================================
+
+@include font-face("Russo One", "../Russo_One", normal, normal, eot ttf woff);
+@include font-face("Roboto Light", "../Roboto-Light", normal, normal, eot ttf woff);
+@include font-face("Roboto Bold", "../Roboto-Bold", normal, bold, eot ttf woff);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	margin: 0;
+	font-family: $f-headlineFont;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+
+
+
+h1 {
+  @include fluidTypeSize(2, 1.6);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  @include fluidTypeSize(1.4, 1.25);
+}
+
+h3 {
+  @include fluidTypeSize(1.5, 1.2);
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1rem ;
+}
+
+h6 {
+  // font-size: ;
+}
+
+
+
+// ================
+// Body Copy
+p {
+	@include fluidTypeSize(.85, .8);
+}
+
+
+p,
+ul,
+ol,
+blockquote,
+address {
+  margin: 0 0 1rem 0;
+  font-style: normal;
+  font-family: $f-bodyFont;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    // ~ Put list styles here ~
+  }
+}
+
+a {
+    text-decoration: none;
+    color: $c-white;
+    transition: all .5s;
+
+  &:hover,
+  &:focus {
+    color: $c-red;
+  }
+}

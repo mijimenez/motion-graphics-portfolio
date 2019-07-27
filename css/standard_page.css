@@ -1,0 +1,1137 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+/* line 13, ../sass/vendor/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 27, ../sass/vendor/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 35, ../sass/vendor/_normalize.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 49, ../sass/vendor/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+/* line 62, ../sass/vendor/_normalize.scss */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 72, ../sass/vendor/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 81, ../sass/vendor/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 92, ../sass/vendor/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 105, ../sass/vendor/_normalize.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 115, ../sass/vendor/_normalize.scss */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 125, ../sass/vendor/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 135, ../sass/vendor/_normalize.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 144, ../sass/vendor/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 154, ../sass/vendor/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 165, ../sass/vendor/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 173, ../sass/vendor/_normalize.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 182, ../sass/vendor/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 191, ../sass/vendor/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 199, ../sass/vendor/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 203, ../sass/vendor/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 214, ../sass/vendor/_normalize.scss */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 223, ../sass/vendor/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 232, ../sass/vendor/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 240, ../sass/vendor/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 252, ../sass/vendor/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 268, ../sass/vendor/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 278, ../sass/vendor/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 289, ../sass/vendor/_normalize.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 300, ../sass/vendor/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 312, ../sass/vendor/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+/* line 323, ../sass/vendor/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 336, ../sass/vendor/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 350, ../sass/vendor/_normalize.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 359, ../sass/vendor/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 368, ../sass/vendor/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 378, ../sass/vendor/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 388, ../sass/vendor/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+/* line 397, ../sass/vendor/_normalize.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 407, ../sass/vendor/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+/* line 420, ../sass/vendor/_normalize.scss */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 429, ../sass/vendor/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 440, ../sass/vendor/_normalize.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 448, ../sass/vendor/_normalize.scss */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 459, ../sass/vendor/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* =============================================
+   Base styles: opinionated defaults
+   ============================================= */
+/* line 13, ../sass/vendor/_html5-boilerplate-base.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* line 21, ../sass/vendor/_html5-boilerplate-base.scss */
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 32, ../sass/vendor/_html5-boilerplate-base.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 37, ../sass/vendor/_html5-boilerplate-base.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 46, ../sass/vendor/_html5-boilerplate-base.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+/* line 60, ../sass/vendor/_html5-boilerplate-base.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 71, ../sass/vendor/_html5-boilerplate-base.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 81, ../sass/vendor/_html5-boilerplate-base.scss */
+textarea {
+  resize: vertical;
+}
+
+/* =============================================
+   Browse Happy prompt
+   ============================================= */
+/* line 89, ../sass/vendor/_html5-boilerplate-base.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* =============================================
+   Helper classes
+   ============================================= */
+/*
+ * Image replacement
+ */
+/* line 104, ../sass/vendor/_html5-boilerplate-base.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 112, ../sass/vendor/_html5-boilerplate-base.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 123, ../sass/vendor/_html5-boilerplate-base.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 132, ../sass/vendor/_html5-boilerplate-base.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 148, ../sass/vendor/_html5-boilerplate-base.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 162, ../sass/vendor/_html5-boilerplate-base.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 178, ../sass/vendor/_html5-boilerplate-base.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 184, ../sass/vendor/_html5-boilerplate-base.scss */
+.clearfix:after {
+  clear: both;
+}
+
+@font-face {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Russo_One.eot?") format("eot"), url("../Russo_One.ttf") format("truetype"), url("../Russo_One.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Roboto-Light.eot?") format("eot"), url("../Roboto-Light.ttf") format("truetype"), url("../Roboto-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto Bold";
+  font-style: bold;
+  font-weight: normal;
+  src: url("../Roboto-Bold.eot?") format("eot"), url("../Roboto-Bold.ttf") format("truetype"), url("../Roboto-Bold.woff") format("woff");
+}
+/* line 9, ../sass/Utilities/_type.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/Utilities/_type.scss */
+body {
+  text-align: center;
+  margin: 0;
+  font-family: "Russo One", Arial, sans-serif;
+}
+
+/* line 21, ../sass/Utilities/_type.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+/* line 35, ../sass/Utilities/_type.scss */
+h1 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media (min-width: 20rem) and (max-width: 75rem) {
+  /* line 35, ../sass/Utilities/_type.scss */
+  h1 {
+    font-size: calc( 1.6rem + (2 - 1.6) * ( (100vw - 20rem) / ( 75 - 20) ));
+  }
+}
+@media (min-width: 75rem) {
+  /* line 35, ../sass/Utilities/_type.scss */
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* line 41, ../sass/Utilities/_type.scss */
+h2 {
+  font-size: 1.25rem;
+}
+@media (min-width: 20rem) and (max-width: 75rem) {
+  /* line 41, ../sass/Utilities/_type.scss */
+  h2 {
+    font-size: calc( 1.25rem + (1.4 - 1.25) * ( (100vw - 20rem) / ( 75 - 20) ));
+  }
+}
+@media (min-width: 75rem) {
+  /* line 41, ../sass/Utilities/_type.scss */
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* line 45, ../sass/Utilities/_type.scss */
+h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+@media (min-width: 20rem) and (max-width: 75rem) {
+  /* line 45, ../sass/Utilities/_type.scss */
+  h3 {
+    font-size: calc( 1.2rem + (1.5 - 1.2) * ( (100vw - 20rem) / ( 75 - 20) ));
+  }
+}
+@media (min-width: 75rem) {
+  /* line 45, ../sass/Utilities/_type.scss */
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* line 50, ../sass/Utilities/_type.scss */
+h4 {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+/* line 55, ../sass/Utilities/_type.scss */
+h5 {
+  font-size: 1rem;
+}
+
+/* line 67, ../sass/Utilities/_type.scss */
+p {
+  font-size: 0.8rem;
+}
+@media (min-width: 20rem) and (max-width: 75rem) {
+  /* line 67, ../sass/Utilities/_type.scss */
+  p {
+    font-size: calc( 0.8rem + (0.85 - 0.8) * ( (100vw - 20rem) / ( 75 - 20) ));
+  }
+}
+@media (min-width: 75rem) {
+  /* line 67, ../sass/Utilities/_type.scss */
+  p {
+    font-size: 0.85rem;
+  }
+}
+
+/* line 72, ../sass/Utilities/_type.scss */
+p,
+ul,
+ol,
+blockquote,
+address {
+  margin: 0 0 1rem 0;
+  font-style: normal;
+  font-family: "Roboto Light", Arial, sans-serif;
+}
+
+/* line 82, ../sass/Utilities/_type.scss */
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 93, ../sass/Utilities/_type.scss */
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all .5s;
+}
+/* line 98, ../sass/Utilities/_type.scss */
+a:hover, a:focus {
+  color: #FF0000;
+}
+
+/* ================================= 
+  Base Styles
+==================================== */
+/* line 7, ../sass/Utilities/_layout.scss */
+.main-nav {
+  background: rgba(0, 0, 0, 0.7);
+}
+@media (min-width: 37.5em) {
+  /* line 10, ../sass/Utilities/_layout.scss */
+  .main-nav .wrapper {
+    width: 90%;
+    max-width: 48em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+  }
+}
+@media (min-width: 64em) {
+  /* line 10, ../sass/Utilities/_layout.scss */
+  .main-nav .wrapper {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+  }
+}
+/* line 22, ../sass/Utilities/_layout.scss */
+.main-nav .wrapper .logo {
+  content: '';
+  background: url(../img/logo.svg) no-repeat;
+  display: inline-block;
+  background-size: contain;
+  width: 100%;
+  max-width: 10em;
+  height: 4em;
+}
+/* line 30, ../sass/Utilities/_layout.scss */
+.main-nav .wrapper .logo:hover, .main-nav .wrapper .logo:focus {
+  opacity: .5;
+}
+/* line 37, ../sass/Utilities/_layout.scss */
+.main-nav .wrapper .menu-items li a {
+  font-family: "Russo One", Arial, sans-serif;
+}
+/* line 39, ../sass/Utilities/_layout.scss */
+.main-nav .wrapper .menu-items li a:hover, .main-nav .wrapper .menu-items li a:focus {
+  color: white;
+}
+@media (max-width: 37.5em) {
+  /* line 46, ../sass/Utilities/_layout.scss */
+  .main-nav .wrapper .menu-items li {
+    border-top: thin solid #262626;
+  }
+  /* line 48, ../sass/Utilities/_layout.scss */
+  .main-nav .wrapper .menu-items li:last-child {
+    border-bottom: thin solid #262626;
+  }
+  /* line 51, ../sass/Utilities/_layout.scss */
+  .main-nav .wrapper .menu-items li a {
+    display: block;
+    padding: 1em;
+  }
+  /* line 54, ../sass/Utilities/_layout.scss */
+  .main-nav .wrapper .menu-items li a:hover, .main-nav .wrapper .menu-items li a:focus {
+    background: #666666;
+  }
+}
+@media (min-width: 37.5em) {
+  /* line 35, ../sass/Utilities/_layout.scss */
+  .main-nav .wrapper .menu-items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /* line 64, ../sass/Utilities/_layout.scss */
+  .main-nav .wrapper .menu-items li:not(:first-child) {
+    margin-left: 4em;
+  }
+  /* line 68, ../sass/Utilities/_layout.scss */
+  .main-nav .wrapper .menu-items li a:hover, .main-nav .wrapper .menu-items li a:focus {
+    color: red;
+  }
+}
+
+/* line 79, ../sass/Utilities/_layout.scss */
+.main-footer {
+  background: #FF0000;
+}
+@media (min-width: 37.5em) {
+  /* line 81, ../sass/Utilities/_layout.scss */
+  .main-footer .wrapper {
+    width: 90%;
+    max-width: 48em;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+  }
+}
+/* line 88, ../sass/Utilities/_layout.scss */
+.main-footer .wrapper .icon {
+  content: '';
+  background: url(../img/img-icon.svg) no-repeat;
+  display: inline-block;
+  background-size: contain;
+  width: 100%;
+  height: 4em;
+  max-width: 4em;
+  margin-top: -2em;
+  z-index: 2;
+}
+/* line 98, ../sass/Utilities/_layout.scss */
+.main-footer .wrapper .icon:hover, .main-footer .wrapper .icon:focus {
+  opacity: .75;
+}
+/* line 105, ../sass/Utilities/_layout.scss */
+.main-footer .wrapper .menu-items li a {
+  font-family: "Russo One", Arial, sans-serif;
+}
+/* line 107, ../sass/Utilities/_layout.scss */
+.main-footer .wrapper .menu-items li a:hover, .main-footer .wrapper .menu-items li a:focus {
+  color: white;
+}
+@media (max-width: 37.5em) {
+  /* line 103, ../sass/Utilities/_layout.scss */
+  .main-footer .wrapper .menu-items {
+    margin-top: 1em;
+  }
+  /* line 115, ../sass/Utilities/_layout.scss */
+  .main-footer .wrapper .menu-items li {
+    border-top: thin solid #bfbfbf;
+  }
+  /* line 117, ../sass/Utilities/_layout.scss */
+  .main-footer .wrapper .menu-items li:last-child {
+    border-bottom: thin solid #bfbfbf;
+  }
+  /* line 120, ../sass/Utilities/_layout.scss */
+  .main-footer .wrapper .menu-items li a {
+    display: block;
+    padding: 1em;
+  }
+  /* line 123, ../sass/Utilities/_layout.scss */
+  .main-footer .wrapper .menu-items li a:hover, .main-footer .wrapper .menu-items li a:focus {
+    background: #666666;
+  }
+}
+@media (min-width: 37.5em) {
+  /* line 103, ../sass/Utilities/_layout.scss */
+  .main-footer .wrapper .menu-items {
+    padding: 1em 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /* line 134, ../sass/Utilities/_layout.scss */
+  .main-footer .wrapper .menu-items li:not(:first-child) {
+    margin-left: 4em;
+  }
+  /* line 138, ../sass/Utilities/_layout.scss */
+  .main-footer .wrapper .menu-items li a:hover, .main-footer .wrapper .menu-items li a:focus {
+    color: #666666;
+  }
+}
+/* line 146, ../sass/Utilities/_layout.scss */
+.main-footer .wrapper .legal-copy {
+  padding: 1em;
+}
+/* line 148, ../sass/Utilities/_layout.scss */
+.main-footer .wrapper .legal-copy p {
+  margin: 0;
+}
+/* line 152, ../sass/Utilities/_layout.scss */
+.main-footer .wrapper .legal-copy a:hover, .main-footer .wrapper .legal-copy a:focus {
+  color: #666666;
+}
+
+/* line 13, ../sass/standard_page.scss */
+.main-nav {
+  background: #000000;
+}
+
+/* line 338, ../sass/vendor/_royall.scss */
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* line 346, ../sass/vendor/_royall.scss */
+body > * {
+  -webkit-flex-shrink: 0;
+  -moz-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+/* line 350, ../sass/vendor/_royall.scss */
+main {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+/* line 20, ../sass/standard_page.scss */
+.main-wrapper {
+  width: 90%;
+  max-width: 48em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 23, ../sass/standard_page.scss */
+.main h1 {
+  margin-top: 10%;
+}
+/* line 26, ../sass/standard_page.scss */
+.main a.back-button {
+  display: block;
+  font-family: "Russo One", Arial, sans-serif;
+  color: #FFFFFF;
+  padding: .5em .75em;
+  background: #FF0000;
+  margin-bottom: 20%;
+  border: thin solid #FFFFFF;
+  cursor: pointer;
+  transition: all .5s;
+}
+@media (min-width: 30em) {
+  /* line 26, ../sass/standard_page.scss */
+  .main a.back-button {
+    display: inline-block;
+  }
+}
+/* line 39, ../sass/standard_page.scss */
+.main a.back-button:hover {
+  background: #FFFFFF;
+  color: #FF0000;
+  border: thin solid #FF0000;
+}
+/* line 44, ../sass/standard_page.scss */
+.main a.back-button:focus {
+  outline: none;
+}
+
+/* line 52, ../sass/standard_page.scss */
+.main-footer .wrapper .icon {
+  background: url(../img/img-icon-black.svg) no-repeat;
+  background-size: contain;
+}
+
+/*# sourceMappingURL=standard_page.css.map */

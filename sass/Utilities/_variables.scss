@@ -1,0 +1,34 @@
+// =================================
+//	Variables
+// =================================
+
+
+//Font Stacks
+$f-headlineFont: 'Russo One', Arial, sans-serif;
+$f-bodyFont: 'Roboto Light', Arial, sans-serif;
+
+
+// Breakpoints
+$mq-xxLarge: 100em; // 1600px
+$mq-xLarge: 85.9375em; // 1375px
+$mq-large: 75em; // 1200px
+$mq-mediumLarge: 64em; // 1024px
+$mq-medium: 56.25em; // 900px
+$mq-mediumSmall: 48em; // 768px
+$mq-small: 37.5em; // 600px
+$mq-tiny: 30em; // 480px
+$mq-base: 20em; // 320px
+
+//Colors
+$c-red: #FF0000;
+$c-blue: #4A4AFF;
+$c-white: #FFFFFF;
+$c-black: #000000;
+$c-darkgrey: #666666;
+$c-lightgrey: #F4F4F4;
+
+
+
+// Layout
+// $max-width: $break-m;
+// $gutter: 10px;

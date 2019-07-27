@@ -1,0 +1,57 @@
+@import "vendor/flex",
+		"vendor/royall",
+		"vendor/normalize",
+		"vendor/html5-boilerplate-base";
+
+@import 'Utilities/variables',
+		'Utilities/mixins',
+		'Utilities/functions',
+		'Utilities/type',
+		'Utilities/layout';
+
+// Styling thank_you page and error page
+.main-nav {
+	background: $c-black;
+}
+
+@include stickyFooter('main');
+
+.main {
+	&-wrapper {
+		@include center(90%, $mq-mediumSmall);
+	}
+	h1 {
+		margin-top: 10%;
+	}
+	a.back-button {
+		display: block;
+	    font-family: $f-headlineFont;
+	    color: $c-white;
+        padding: .5em .75em;
+	    background: $c-red;
+	    margin-bottom: 20%;
+	    border: thin solid $c-white;
+	    cursor: pointer;
+	    transition: all .5s;
+	    @media (min-width: $mq-tiny) {
+	    	display: inline-block;
+	    }
+	    &:hover {
+	    	background: $c-white;
+	    	color: $c-red;
+	    	border: thin solid $c-red;
+	    }
+	    &:focus {
+	    	outline: none;
+	    }
+	}
+}
+
+.main-footer {
+	.wrapper {
+		.icon {
+			background: url(../img/img-icon-black.svg) no-repeat;
+			background-size: contain;
+		}
+	}
+}

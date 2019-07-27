@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Andres Jimenez Design</title>
+	<link rel="stylesheet" href="css/portfolio_page.css">
+	<link rel="shortcut icon" href="img/image_logo.ico" type="image/x-icon">
+</head>
+
+<!-- Update id! -->
+<body id="portfolio_page_work_1">
+	<nav>
+		<div class="main-nav">
+			<div class="wrapper">
+				<a href="index.html" class="logo" alt="Andres Jimenez Design Logo"></a>
+				<nav>
+					<ul class="menu-items">
+						<li><a href="index.html#work">Motion Graphics</a></li>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</nav>
+	<header>
+		<div class="hero">
+			<div class="page-description">
+				<!-- Update titles! -->
+				<h4 class="project-title">Storm Rider 6 Coming Soon</h4>
+				<div class="breadcrumbs"><a href="index.html#">Home</a> > <a href="index.html#work">Motion Graphics</a> > <a>Storm Rider 6 Coming Soon</a></div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="project">
+			<div class="project-pieces">
+				<div class="wrapper">
+					<!-- Update video! -->
+					<video width="100%" controls="1">
+					  <source src="vid/vid-work1-part1.mp4" type="video/mp4">
+						Your browser does not support HTML5 video.
+					</video>
+					<video width="100%" controls="1">
+					  <source src="vid/vid-work1-part2.mp4" type="video/mp4">
+						Your browser does not support HTML5 video.
+					</video>
+				</div>
+			</div>
+			<div class="project-details" id="projectDetails">
+				<div class="wrapper">
+					<h5>Project Details</h5>
+					<h3 class="goals">Goal</h3>
+					<!-- Update description! -->
+					<p class="goals-description">This promotional animation was created to announce CBS6&#x00027s upcoming weather vehicle &#x00022Storm Rider 6&#x00022. There was no access to the actual vehicle; but with a 3D model of the Ford, the car wrap I designed as well, some specs. We were able to create an exciting teaser.</p>
+					<h3 class="roles">Roles</h3>
+					<p class="roles-description">Senior Graphic Designer: 3D Animation | Andres Jimenez</p>
+					<p class="roles-description">Marketing Director: Sound Design | David Stotts</p>
+					<h3 class="programs">Programs</h3>
+					<p class="programs-description">Cinema 4D, After Effects</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+	<footer>
+		<div class="main-footer">
+			<div class="wrapper">
+				<a href="index.html" class="icon" alt="Andres Jimenez Design Logo"></a>
+				<nav>
+					<ul class="menu-items">
+						<li><a href="index.html#work">Motion Graphics</a></li>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="legal-copy">
+					<p>&copy; 2019 Andres Jimenez Design</p>
+					<p>Designed and developed by <a href="https://madelinegrand.com/" target="_blank">Madeline Jimenez</a>.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("projectDetails");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

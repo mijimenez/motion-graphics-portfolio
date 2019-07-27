@@ -1,0 +1,138 @@
+/* form -------------------- */
+
+form {
+	text-align: left;
+	width: 90%;
+	max-width: 30em;
+	padding: 5% 0;
+	margin: auto;
+	@media (min-width: $mq-tiny) {
+		.name-email-container {
+			@include flexbox;
+			.email {
+				margin-left: 1em;
+			}
+		}
+	}
+}
+
+fieldset {
+	border-style: none;
+}
+
+legend {
+	text-align: center;
+	margin: 0;
+	font-family: $f-headlineFont;
+	font-size: 1.125em;
+	color: #fff;
+	padding-bottom: 1em;
+}
+
+label {
+	color: #fff;
+	font-family: $f-bodyFont;
+	font-size: 1em;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+input[type="text"],
+textarea[type="text"] {
+	color: #939393;
+	font-family: $f-bodyFont;
+	width: 100%;
+	display: inline-block;
+	padding: .6em;
+	margin-bottom: 1em;
+	margin-top: .25em;
+	border-radius: .25em;
+	border-style: none;
+	@include fluidTypeSize(1, .85);
+}
+
+textarea[type="text"] {
+	height: 10em;
+}
+
+input[type="text"]::placeholder,
+textarea[type="text"]::placeholder {
+	color: #9f9f9f;
+}
+
+button[type="submit"]:hover,
+input[type="text"]:hover,
+textarea[type="text"]:hover {
+	-webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+	box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+}
+
+
+input[type="text"]:focus,
+button[type="submit"]:focus,
+textarea[type="text"]:focus   {
+	outline: none;
+}
+
+input[type="text"]:focus {
+	-webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+	box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+}
+
+
+button[type="submit"] {
+	font-family: $f-headlineFont;
+	text-transform: uppercase;
+	width: 100%;
+	padding: 1em;
+	color: #fff;
+  	border: none;
+  	border-radius: .25em;
+	background-image: linear-gradient(90deg,darken($c-red,25%),$c-red,darken($c-red,25%));
+	background-color: $c-red;
+	&::after {
+      content: "";
+      display: inline-block;
+      border-left: solid .4em white;
+      border-bottom: solid .4em transparent;
+      border-top: solid .4em transparent;
+      margin-left: 1em;
+      bottom: 1px;
+      right: -2em;
+      transition: all .5s;
+	}
+	&:hover {
+		background-image: linear-gradient(90deg,darken($c-red,25%),darken($c-red,15%),darken($c-red,25%));
+	}
+	&:focus {
+		background: #fff;
+		color: #234452;
+		&::after {
+			color: #234452;
+		}
+	}
+	&:hover,
+	&:focus {
+		&::after {
+			margin-left: 2em;
+		}
+	}
+}
+
+
+
+
+
+
+

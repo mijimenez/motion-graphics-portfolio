@@ -1,0 +1,425 @@
+@import "vendor/flex",
+		"vendor/royall",
+		"vendor/normalize",
+		"vendor/html5-boilerplate-base";
+
+@import 'Utilities/variables',
+		'Utilities/mixins',
+		'Utilities/functions',
+		'Utilities/type',
+		'Utilities/layout',
+		'Utilities/forms';
+
+
+
+
+/* ================================= 
+  Header
+==================================== */
+
+header {
+	height: 100vh;
+	.hero {
+		z-index: -2;
+		background: $c-black;
+	  	position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		overflow: hidden;
+		.video-wrapper {
+			video {
+				/* Make video to at least 100% wide and tall */
+				min-width: 100%; 
+				min-height: 100%; 
+
+				/* Setting width & height to auto prevents
+				the browser from stretching or squishing the video */
+				width: auto;
+				height: auto;
+
+				/* Center the video */
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+		}
+		.video-overlay {
+		    position: absolute;
+		    width: 100%; height:100%;
+		    top:0; left:0;
+		    background: rgba(0,0,0,0.8);
+		}
+		.home-welcome {
+		    position: absolute;
+		    width: 100%;
+		    padding: 50vh 5% 0;
+		    top: 0;
+			h1 {
+				color: $c-white;
+			    max-width: 15em;
+    			margin: auto;
+				span {
+					color: $c-red;
+				}
+			}
+			h2 {
+				font-family: $f-bodyFont;
+				color: $c-white;
+				margin-top: 2em;
+			}
+			@media (min-width: $mq-tiny) {
+				padding: 50vh 0;
+			}
+		}
+	}
+	#myBtn {
+	    position: absolute;
+	    top: 90vh;
+	    right: calc(50vw - 5em);
+	    font-family: $f-headlineFont;
+	    color: #FFFFFF;
+	    width: 10em;
+        padding: .5em;
+	    background: none;
+	    cursor: pointer;
+	    transition: background .5s;
+	    &:hover {
+	    	background: $c-white;
+	    	color: $c-black;
+	    }
+	    &:focus {
+	    	outline: none;
+	    }
+	}
+	.download-reel {
+	    position: absolute;
+	    top: 83vh;
+	    right: calc(50vw - 5em);
+	    font-family: $f-headlineFont;
+	    color: #FFFFFF;
+	    width: 10em;
+        padding: .5em;
+	    background: none;
+	    cursor: pointer;
+	    transition: background .5s;
+	    &:hover {
+	    	background: $c-white;
+	    	color: $c-black;
+	    }
+	    &:focus {
+	    	outline: none;
+		}
+	}
+}
+
+main {
+	.work {
+		background-color: $c-lightgrey;
+		h2 {
+			@include titleStyle($c-red);
+			text-transform: uppercase;
+			margin: 5% 0;
+		}
+		.boxes {
+			@include flexbox;
+			@include flex-wrap(wrap);
+			@include justify-content(center);
+			.box-container {
+			    width: 100%;
+			    @media (min-width: $mq-small) {
+			      width: 50%;
+			    }
+			    @media (min-width: $mq-medium) {
+			      width: 33.333%;
+			    }
+			    @media (min-width: $mq-large) {
+			      width: 25%;
+			    }
+				.box {
+					background: lightgrey;
+					height: 100vw;
+					border-bottom: thin $c-white solid;
+					@media (min-width: $mq-small) {
+						height: 50vw;
+						border: thin $c-white solid;
+					}
+					@media (min-width: $mq-medium) {
+						height: 33.333vw;
+					}
+					@media (min-width: $mq-large) {
+						height: 25vw;
+					}
+				    position: relative;
+				    .work-thumbnail {
+						width: 100%;
+						height: 100%;
+						padding: 5em;
+						background: $c-black url("../img/img-about.png") no-repeat top center / cover;
+						@include flexbox;
+					    @include justify-content(center);
+					    @include align-items(center);
+				    }
+				    .thumbnail1 {
+				    	background: $c-black url("../img/img-thumb-1.jpg") no-repeat top center / cover;
+					}
+				    .thumbnail2 {
+				    	background: $c-black url("../img/img-thumb-2.jpg") no-repeat top center / cover;
+					}
+				    .thumbnail3 {
+				    	background: $c-black url("../img/img-thumb-3.jpg") no-repeat top center / cover;
+					}
+				    .thumbnail4 {
+				    	background: $c-black url("../img/img-thumb-4.jpg") no-repeat top center / cover;
+					}
+				    .thumbnail5 {
+				    	background: $c-black url("../img/img-thumb-5.jpg") no-repeat top center / cover;
+					}
+				    .thumbnail6 {
+				    	background: $c-black url("../img/img-thumb-6.jpg") no-repeat top center / cover;
+					}
+				    .thumbnail7 {
+				    	background: $c-black url("../img/img-thumb-7.jpg") no-repeat top center / cover;
+					}
+				    .thumbnail8 {
+				    	background: $c-black url("../img/img-thumb-8.jpg") no-repeat top center / cover;
+					}
+				    .thumbnail9 {
+				    	background: $c-black url("../img/img-thumb-9.jpg") no-repeat top center / cover;
+					}
+				    .thumbnail10 {
+				    	background: $c-black url("../img/img-thumb-10.jpg") no-repeat top center / cover;
+					}
+				    .thumbnail11 {
+				    	background: $c-black url("../img/img-thumb-11.jpg") no-repeat top center / cover;
+					}
+				    .thumbnail12 {
+				    	background: $c-black url("../img/img-thumb-12.jpg") no-repeat top center / cover;
+					}
+				    &-overlay {
+					    position: absolute;
+					    width: 100%;
+					    height:100%;
+					    top:0;
+					    left:0;
+					    background:rgba(0,0,0,0.9);
+					    opacity: 0;
+					    transition: all .5s;
+					    &::before {
+					    	content: 'Work Title';
+					    	color: $c-white;
+					    	text-transform: uppercase;
+					    	position: absolute;
+					    	font-size: 1.5em;
+						    width: 100%;
+						    top: 45%;
+						    left: 0;
+					    	opacity: 0;
+					    	transition: all .5s;
+					    }
+					    &::after {
+					    	content: 'Work Description';
+					    	color: $c-white;
+					    	font-family: $f-bodyFont;
+					    	position: absolute;
+					    	font-size: 1.2em;
+						    width: 100%;
+						    top: 57%;
+						    left: 0;
+					    	opacity: 0;
+					    	transition: all .5s;
+					    }
+						    &:hover {
+					    	opacity: 1;
+					    		&::before {
+					    			opacity: 1;
+					    			font-size: 1em;
+					    		}
+					    		&::after {
+					    			opacity: 1;
+					    			font-size: .7em;
+					    		}
+					    }
+
+				    }
+				    &-overlay1 {
+				    	&::before {
+				    		content: 'Storm Rider 6 Coming Soon';
+				    	}
+				    	&::after {
+				    		content: 'Promotion';
+				    	}
+				    }
+				    &-overlay2 {
+				    	&::before {
+				    		content: '11PM Image Spin';
+				    	}
+				    	&::after {
+				    		content: 'Promotion';
+				    	}
+				    }
+				    &-overlay3 {
+				    	&::before {
+				    		content: 'Walk for Wishes';
+				    	}
+				    	&::after {
+				    		content: 'PSA';
+				    	}
+				    }
+				    &-overlay4 {
+				    	&::before {
+				    		content: 'I Have a Story: 92 Year Old House';
+				    	}
+				    	&::after {
+				    		content: 'Promotion';
+				    	}
+				    }
+				    &-overlay5 {
+				    	&::before {
+				    		content: '11PM Storytellers';
+				    	}
+				    	&::after {
+				    		content: 'Campaign';
+				    	}
+				    }
+				    &-overlay6 {
+				    	&::before {
+				    		content: 'Problem Solvers Investigation Papers';
+				    	}
+				    	&::after {
+				    		content: 'Campaign';
+				    	}
+				    }
+				    &-overlay7 {
+				    	&::before {
+				    		content: 'Rubix Kube Ticket Giveaway';
+				    	}
+				    	&::after {
+				    		content: 'Contest';
+				    	}
+				    }
+				    &-overlay8 {
+				    	&::before {
+				    		content: 'DCW50 Zombies';
+				    	}
+				    	&::after {
+				    		content: 'Campaign';
+				    	}
+				    }
+				    &-overlay9 {
+				    	&::before {
+				    		content: 'CBS6 Soaps';
+				    	}
+				    	&::after {
+				    		content: 'Campaign';
+				    	}
+				    }
+				    &-overlay10 {
+				    	&::before {
+				    		content: 'Happy Valentine\0027s Day';
+				    	}
+				    	&::after {
+				    		content: 'ID';
+				    	}
+				    }
+				    &-overlay11 {
+				    	&::before {
+				    		content: 'The Next Governor';
+				    	}
+				    	&::after {
+				    		content: 'Special';
+				    	}
+				    }
+				    &-overlay12 {
+				    	&::before {
+				    		content: 'Nikki-Dee Be Me';
+				    	}
+				    	&::after {
+				    		content: 'Campaign';
+				    	}
+				    }
+				}
+			}
+		}
+	}
+	.about {
+		&-wrapper {
+			background: $c-lightgrey;
+			.about-info {
+				@include flex(1);
+			    @include flexbox;
+    			align-items: center;
+				&-wrapper {
+					@include center(90%, $mq-mediumSmall);
+					padding: 5em 0;
+					h2 {
+						@include titleStyle($c-red);
+						text-transform: uppercase;
+					}
+					p {
+						text-align: center;
+						color: $c-black;
+					}
+					p.experience {
+						span {
+							display: block;
+						}
+						span:first-child {
+							font-family: 'Roboto Bold';
+						}
+					}
+				}
+			}
+			.about-pic {
+				@include flex(1);
+				width: 100%;
+				height: 30em;
+				background: $c-black url("../img/img-about.jpg") no-repeat top center / cover;
+			}
+			@media (min-width: $mq-mediumSmall) {
+				@include flexbox;
+				.about-info {
+					&-wrapper {
+						@include center(70%, $mq-mediumSmall);
+					}
+				}
+				.about-pic {
+					height: initial;
+				}
+			}
+			.resume {
+				&-download, &-view {
+					a {
+						color: red;
+						border-bottom: thin solid red;
+						&:hover,
+						&:focus {
+							color: $c-darkgrey;
+							border-bottom: thin solid $c-darkgrey;
+						}
+					}
+				}
+				&-download {
+					margin: 0;
+				}
+			}
+		}
+	}
+	.contact {
+		.form-container {
+			background-color: $c-black;
+			padding: 5% 0;
+		}
+		h2 {
+			color: $c-white;
+			text-align: center;
+			@include titleStyle($c-red);
+			text-transform: uppercase;
+			margin: 0;
+		}
+	}
+}
+
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Andres Jimenez Design</title>
+	<link rel="stylesheet" href="css/portfolio_page.css">
+	<link rel="shortcut icon" href="img/image_logo.ico" type="image/x-icon">
+</head>
+
+<!-- Update id! -->
+<body id="portfolio_page_work_12">
+	<nav>
+		<div class="main-nav">
+			<div class="wrapper">
+				<a href="index.html" class="logo" alt="Andres Jimenez Design Logo"></a>
+				<nav>
+					<ul class="menu-items">
+						<li><a href="index.html#work">Motion Graphics</a></li>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</nav>
+	<header>
+		<div class="hero">
+			<div class="page-description">
+				<!-- Update titles! -->
+				<h4 class="project-title">Nikki-Dee Be Me</h4>
+				<div class="breadcrumbs"><a href="index.html#">Home</a> > <a href="index.html#work">Motion Graphics</a> > <a>Nikki-Dee Be Me</a></div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="project">
+			<div class="project-pieces">
+				<div class="wrapper">
+					<!-- Update video! -->
+					<video width="100%" controls="1">
+					  <source src="vid/vid-work12.mp4" type="video/mp4">
+						Your browser does not support HTML5 video.
+					</video>
+				</div>
+			</div>
+			<div class="project-details" id="projectDetails">
+				<div class="wrapper">
+					<h5>Project Details</h5>
+					<h3 class="goals">Goal</h3>
+					<!-- Update description! -->
+					<p class="goals-description">This was one of the first campaigns I worked on for CBS6. The campaign was made to promote our weather personality Nikki-Dee Ray and her Franchise &#x00022Nikki-Dee Be Me&#x00022 where she took up different professions for viewers to experience. The other graphic designer Rob and I were at the shoot to make sure the shots were set up properly for post production. In post production Me and Rob put the elements together to make it seem the different version of Nikki-Dee Ray were in the same room. I also created web and news elements as well as a unique logo for the franchise.</p>
+					<h3 class="roles">Roles</h3>
+					<p class="roles-description">Senior Graphic Designer: Motion Graphics | Andres Jimenez</p>
+					<p class="roles-description">Senior Graphic Designer: Motion Graphics | Rob Byrne</p>
+					<p class="roles-description">Marketing Director: Editing | David Stotts</p>
+					<h3 class="programs">Programs</h3>
+					<p class="programs-description">After Effects</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+	<footer>
+		<div class="main-footer">
+			<div class="wrapper">
+				<a href="index.html" class="icon" alt="Andres Jimenez Design Logo"></a>
+				<nav>
+					<ul class="menu-items">
+						<li><a href="index.html#work">Motion Graphics</a></li>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="legal-copy">
+					<p>&copy; 2019 Andres Jimenez Design</p>
+					<p>Designed and developed by <a href="https://madelinegrand.com/" target="_blank">Madeline Jimenez</a>.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("projectDetails");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

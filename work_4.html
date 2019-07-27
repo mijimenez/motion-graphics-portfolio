@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Andres Jimenez Design</title>
+	<link rel="stylesheet" href="css/portfolio_page.css">
+	<link rel="shortcut icon" href="img/image_logo.ico" type="image/x-icon">
+</head>
+
+<!-- Update id! -->
+<body id="portfolio_page_work_4">
+	<nav>
+		<div class="main-nav">
+			<div class="wrapper">
+				<a href="index.html" class="logo" alt="Andres Jimenez Design Logo"></a>
+				<nav>
+					<ul class="menu-items">
+						<li><a href="index.html#work">Motion Graphics</a></li>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</nav>
+	<header>
+		<div class="hero">
+			<div class="page-description">
+				<!-- Update titles! -->
+				<h4 class="project-title">I Have a Story: 92 Year Old House</h4>
+				<div class="breadcrumbs"><a href="index.html#">Home</a> > <a href="index.html#work">Motion Graphics</a> > <a>I Have a Story: 92 Year Old House</a></div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="project">
+			<div class="project-pieces">
+				<div class="wrapper">
+					<!-- Update video! -->
+					<video width="100%" controls="1">
+					  <source src="vid/vid-work4.mp4" type="video/mp4">
+						Your browser does not support HTML5 video.
+					</video>
+				</div>
+			</div>
+			<div class="project-details" id="projectDetails">
+				<div class="wrapper">
+					<h5>Project Details</h5>
+					<h3 class="goals">Goal</h3>
+					<!-- Update description! -->
+					<p class="goals-description">This is a promotion for a story by CBS6&#x00027s Greg McQuade and his franchise &#x00022I Have a Story&#x00022. The story was about a man that has lived in the same house in Richmond VA for 92 years so most of his life. The marketing director David requested an animation that reflected this story; and with a couple of details I came up with the final product.</p>
+					<h3 class="roles">Roles</h3>
+					<p class="roles-description">Senior Graphic Designer: Motion Graphics | Andres Jimenez</p>
+					<p class="roles-description">Marketing Director: Editing and Sound Design | David Stotts</p>
+					<h3 class="programs">Programs</h3>
+					<p class="programs-description">After Effects</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+	<footer>
+		<div class="main-footer">
+			<div class="wrapper">
+				<a href="index.html" class="icon" alt="Andres Jimenez Design Logo"></a>
+				<nav>
+					<ul class="menu-items">
+						<li><a href="index.html#work">Motion Graphics</a></li>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="legal-copy">
+					<p>&copy; 2019 Andres Jimenez Design</p>
+					<p>Designed and developed by <a href="https://madelinegrand.com/" target="_blank">Madeline Jimenez</a>.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("projectDetails");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

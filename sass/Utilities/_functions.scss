@@ -1,0 +1,27 @@
+// =================================
+//	Functions
+// =================================
+
+
+// This turns the context you're targetting,
+// (in this case it's the max-width of 50em) into a percentage.
+// *** MAKE SURE THE MAX-WIDTH AMOUNT IS IN EMS
+@function em-to-pc($target, $context: 50em) {
+  @return ($target / $context) * 100%;
+}
+
+
+// This turns the gutter space (.5em) between the flexboxes into percentages
+// and then based on the number of boxes you want on each row
+// it will calculate the flex-basis percentage!
+// * When we apply the em-to-pc function, it's targeting the 10px gutter
+// and accounting for the max-width we've set.
+// *** MAKE SURE THE GUTTER AMOUNT IS IN EMS
+// *** ----------- MAKE SURE THE MARGINS & PADDING AREN'T TOO LARGE OR
+// IT WILL THROW OFF THE CALCULATIONS! LOOK IN INSPECTOR! YOU MAY
+// HAVE TO CHANGE MAX-WIDTH OF FLEX-PARENT...--------------
+@function per-line($items) {
+  $g-pct: em-to-pc(.5em) * 2;
+  $g-total: $items * $g-pct;
+  @return (100% / $items) - $g-total;
+}
